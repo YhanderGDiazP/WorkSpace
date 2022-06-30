@@ -1,4 +1,4 @@
-import {LoginButton} from "./components/Login";
+import {LoginButton} from "./pages/Login";
 import {LogoutButton} from "./components/Logout";
 import {useAuth0} from "@auth0/auth0-react";
 import {Profile} from "./components/Profile";
@@ -9,8 +9,7 @@ function App() {
 
     return (
         <div>
-            <center>
-                {isAuthenticated ? (
+            {isAuthenticated ? (
                     <>
                         <Profile />
                         <LogoutButton />
@@ -18,7 +17,6 @@ function App() {
                 ) : (
                     <LoginButton />
                 )}
-            </center>
         </div>
     );
 }
