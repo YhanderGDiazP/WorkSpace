@@ -1,5 +1,6 @@
-import {LoginButton} from "./pages/Login";
+import {Login} from "./pages/Login";
 import {LogoutButton} from "./components/Logout";
+import { Inicio } from "./pages/Inicio";
 import {useAuth0} from "@auth0/auth0-react";
 import {Profile} from "./components/Profile";
 import './App.css';
@@ -15,7 +16,7 @@ function App() {
                         <LogoutButton />
                     </>
                 ) : (
-                    <LoginButton />
+                    <Login />
                 )}
         </div>
     );

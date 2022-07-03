@@ -1,8 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { useAuth0 } from "@auth0/auth0-react";
-import '../style/componentes-login.css';
+import '../style/componentes.css';
 
 export const Header = () => {
+    // eslint-disable-next-line no-unused-vars
     const { loginWithRedirect } = useAuth0();
 
     return (
@@ -15,7 +18,7 @@ export const Header = () => {
                 <nav>
                     <a href="#" className="nav-link">Inicio</a>
                     <a href="#" className="nav-link">Espacio</a>
-                    <a onClick={() => loginWithRedirect()} className="nav-link">Iniciar Sesion</a>
+                    <a href="#" onClick={() => loginWithRedirect()} className="nav-link">Iniciar Sesion</a>
                     <a href="#" className="nav-link">Registarse</a>
                     <a href="#" className="nav-link">Contacto</a>
                 </nav>
