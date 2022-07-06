@@ -143,7 +143,23 @@ main {
     }
 
     .box-back{
-        margin-top: ;
         max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .box-back div {
+        margin: 0px;
+        position: absolute;
+    }
+
+    .contenedor-login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    } 
+    .contenedor-login-register form{
+        position: relative;
     }
 }
